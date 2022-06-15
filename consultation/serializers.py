@@ -12,6 +12,7 @@ class UserSerializerView(serializers.ModelSerializer):
 class LawyersSerializerView(serializers.ModelSerializer):
     user = UserSerializerView()
 
+
     class Meta:
         model = Lawyer
         fields = '__all__'
